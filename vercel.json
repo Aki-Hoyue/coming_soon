@@ -1,11 +1,6 @@
 {
-  "version": 2,
-  "routes": [
-    {
-      "src": "/(?!index\\.html$)(.*)",
-      "status": 301,
-      "continue": true,
-      "dest": "https://www.hoyue.fun/$1"
-    }
-  ]
+    "version": 2,
+    "routes": [
+        { "src": "/(.*)", "status": 404, "dest": "/index.html" }
+    ]
 }
