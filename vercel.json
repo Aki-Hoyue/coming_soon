@@ -2,18 +2,10 @@
   "version": 2,
   "routes": [
     {
-      "src": "/(.*)",
-      "headers": { "Host": "hoyue\\.fun" },
-      "status": 301,
-      "continue": true,
-      "dest": "https://www.hoyue.fun/$1"
-    },
-    {
       "src": "/(?!index\\.html$).*",
-      "headers": { "Host": "www\\.hoyue\\.fun" },
       "status": 301,
       "continue": true,
-      "dest": "https://www.hoyue.fun/index.html"
+      "dest": "https://www.hoyue.fun"
     }
   ]
 }
